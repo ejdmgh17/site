@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edwar José Duque Márquez | Consultor de Tecnología & IA</title>
+    <meta name="description" content="Portafolio profesional de Edwar Duque, Ingeniero de Sistemas y Consultor en IA, Automatización, Cloud y Desarrollo Full-Stack.">
+    
+    <!-- Favicon con el Logo SVG mejorado -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%230F172A'/%3E%3Cstop offset='100%25' stop-color='%231E3A8A'/%3E%3C/linearGradient%3E%3ClinearGradient id='grn' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2376C043'/%3E%3Cstop offset='100%25' stop-color='%235A9A30'/%3E%3C/linearGradient%3E%3Cfilter id='glow'%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3C/filter%3E%3C/defs%3E%3Ccircle cx='100' cy='90' r='50' fill='none' stroke='url(%23bg)' stroke-width='3'/%3E%3Cellipse cx='100' cy='90' rx='50' ry='18' fill='none' stroke='url(%23grn)' stroke-width='1.5' opacity='0.8'/%3E%3Cellipse cx='100' cy='90' rx='18' ry='50' fill='none' stroke='url(%23grn)' stroke-width='1.5' opacity='0.8'/%3E%3Cpath d='M 50 90 Q 100 140 150 90' fill='none' stroke='url(%23bg)' stroke-width='1.5'/%3E%3Cpath d='M 50 90 Q 100 40 150 90' fill='none' stroke='url(%23bg)' stroke-width='1.5'/%3E%3Ccircle cx='100' cy='90' r='58' fill='none' stroke='url(%23grn)' stroke-width='1' stroke-dasharray='6 6' opacity='0.6'/%3E%3Cpath d='M 70 125 L 78 110 L 122 110 L 130 125 Z' fill='url(%23bg)'/%3E%3Crect x='80' y='112' width='40' height='14' fill='%230F172A' rx='1.5'/%3E%3Crect x='83' y='114' width='34' height='10' fill='url(%23grn)' opacity='0.5' rx='1'/%3E%3Cpath d='M 60 125 L 140 125 L 145 130 L 55 130 Z' fill='url(%23grn)'/%3E%3Cline x1='100' y1='90' x2='100' y2='110' stroke='url(%23grn)' stroke-width='1.5'/%3E%3Ccircle cx='100' cy='90' r='4' fill='%2376C043' filter='url(%23glow)'/%3E%3C/svg%3E" type="image/svg+xml">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuración de colores personalizados -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0F172A',
+                        navyLight: '#1E3A8A',
+                        apple: '#76C043',
+                        appleDark: '#5A9A30',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6.5.1 (Iconos modernos incluyendo X) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(118, 192, 67, 0.15), 0 8px 10px -6px rgba(15, 23, 42, 0.1);
+            border-color: #76C043;
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .logo-ring-1 {
+            animation: rotate 12s linear infinite;
+        }
+        .logo-ring-2 {
+            animation: rotate 18s linear infinite reverse;
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <!-- LOGO SVG MEJORADO -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="w-12 h-12 md:w-14 md:h-14">
+                        <defs>
+                            <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#0F172A"/>
+                                <stop offset="100%" stop-color="#1E3A8A"/>
+                            </linearGradient>
+                            <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#76C043"/>
+                                <stop offset="100%" stop-color="#5A9A30"/>
+                            </linearGradient>
+                            <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="3" result="blur"/>
+                                <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                            </filter>
+                        </defs>
+                        <!-- Globo terráqueo base -->
+                        <circle cx="100" cy="90" r="50" fill="none" stroke="url(#blueGrad)" stroke-width="2.5"/>
+                        <ellipse cx="100" cy="90" rx="50" ry="18" fill="none" stroke="url(#greenGrad)" stroke-width="1.5" opacity="0.8"/>
+                        <ellipse cx="100" cy="90" rx="18" ry="50" fill="none" stroke="url(#greenGrad)" stroke-width="1.5" opacity="0.8"/>
+                        <!-- Líneas de continentes simplificadas -->
+                        <path d="M 50 90 Q 100 140 150 90" fill="none" stroke="url(#blueGrad)" stroke-width="1.5"/>
+                        <path d="M 50 90 Q 100 40 150 90" fill="none" stroke="url(#blueGrad)" stroke-width="1.5"/>
+                        <!-- Anillos digitales giratorios -->
+                        <circle cx="100" cy="90" r="58" fill="none" stroke="url(#greenGrad)" stroke-width="1" stroke-dasharray="6 6" opacity="0.7" class="logo-ring-1" transform-origin="100 90"/>
+                        <circle cx="100" cy="90" r="65" fill="none" stroke="url(#blueGrad)" stroke-width="0.8" stroke-dasharray="4 10" opacity="0.5" class="logo-ring-2" transform-origin="100 90"/>
+                        <!-- Puntos de conexión -->
+                        <circle cx="100" cy="40" r="3" fill="#76C043" filter="url(#glow)"/>
+                        <circle cx="150" cy="90" r="3" fill="#76C043" filter="url(#glow)"/>
+                        <circle cx="50" cy="90" r="3" fill="#76C043" filter="url(#glow)"/>
+                        <!-- Portátil -->
+                        <path d="M 70 125 L 78 110 L 122 110 L 130 125 Z" fill="url(#blueGrad)"/>
+                        <rect x="80" y="112" width="40" height="14" fill="#0F172A" rx="1.5"/>
+                        <rect x="83" y="114" width="34" height="10" fill="url(#greenGrad)" opacity="0.5" rx="1"/>
+                        <path d="M 60 125 L 140 125 L 145 130 L 55 130 Z" fill="url(#greenGrad)"/>
+                        <!-- Conexión globo-laptop -->
+                        <line x1="100" y1="90" x2="100" y2="110" stroke="url(#greenGrad)" stroke-width="1.5" filter="url(#glow)"/>
+                        <circle cx="100" cy="90" r="4" fill="#76C043" filter="url(#glow)"/>
+                    </svg>
+                    <span class="text-xl font-bold text-navy hidden sm:block">Edwar Duque</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-apple font-medium transition">Inicio</a>
+                    <a href="#perfil" class="text-gray-700 hover:text-apple font-medium transition">Perfil</a>
+                    <a href="#especialidades" class="text-gray-700 hover:text-apple font-medium transition">Especialidades</a>
+                    <a href="#proyectos" class="text-gray-700 hover:text-apple font-medium transition">Proyectos</a>
+                    <a href="#contacto" class="px-5 py-2 bg-navy text-white rounded-full font-medium hover:bg-apple transition duration-300">Contacto</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-navy hover:text-apple focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#inicio" class="block px-3 py-2 text-gray-700 hover:text-apple font-medium">Inicio</a>
+                <a href="#perfil" class="block px-3 py-2 text-gray-700 hover:text-apple font-medium">Perfil</a>
+                <a href="#especialidades" class="block px-3 py-2 text-gray-700 hover:text-apple font-medium">Especialidades</a>
+                <a href="#proyectos" class="block px-3 py-2 text-gray-700 hover:text-apple font-medium">Proyectos</a>
+                <a href="#contacto" class="block px-3 py-2 text-apple font-bold">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 lg:pt-40 lg:pb-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-apple/10 text-appleDark font-semibold text-sm tracking-wide uppercase">
+                Consultor de Tecnología & Automatización Inteligente
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-navy tracking-tight mb-6">
+                Edwar José Duque Márquez
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-10 font-light">
+                Transformando retos empresariales en soluciones tecnológicas de alto impacto mediante <span class="text-apple font-semibold">Inteligencia Artificial</span>, <span class="text-apple font-semibold">Cloud</span> y <span class="text-apple font-semibold">Arquitectura de Software</span>.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#proyectos" class="px-8 py-4 bg-navy text-white rounded-lg font-semibold hover:bg-navyLight transition duration-300 shadow-lg shadow-navy/20">
+                    Ver Proyectos
+                </a>
+                <a href="#contacto" class="px-8 py-4 bg-white text-navy border-2 border-navy rounded-lg font-semibold hover:bg-apple hover:text-white hover:border-apple transition duration-300">
+                    Conectar Ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perfil Profesional -->
+    <section id="perfil" class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Perfil Profesional</h2>
+                <div class="w-20 h-1 bg-apple mx-auto rounded-full"></div>
+            </div>
+            <div class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    Ingeniero de Sistemas con más de 24 años de trayectoria transformando retos empresariales en soluciones tecnológicas de alto impacto. Mi enfoque combina una sólida base en ingeniería de software con una visión estratégica de consultoría, especializado en arquitectura web, análisis de datos, soluciones en la nube, Inteligencia Artificial y automatización inteligente.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    A lo largo de mi carrera, he liderado proyectos integrales para diversos sectores, aportando valor mediante la modernización de portales corporativos y el desarrollo de sistemas robustos. Mi metodología se centra en entender el modelo de negocio para implementar la arquitectura tecnológica exacta que impulse el crecimiento y la eficiencia.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    Ya sea liderando migraciones, diseñando arquitecturas basadas en IA o configurando ecosistemas automatizados, mi prioridad es siempre la continuidad operativa y la rentabilidad del cliente.
+                </p>
+                <p class="text-lg text-navy font-semibold leading-relaxed border-l-4 border-apple pl-4 italic">
+                    "Siempre interesado en conectar con líderes y equipos que buscan soluciones innovadoras, resilientes y orientadas a resultados."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especialidades -->
+    <section id="especialidades" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Especialidades y Stack Tecnológico</h2>
+                <div class="w-20 h-1 bg-apple mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="w-14 h-14 bg-apple/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-2xl text-apple"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">AI & Automation</h3>
+                    <p class="text-gray-600 leading-relaxed">Implementación de flujos inteligentes con n8n, Make, Zapier, Power Automate y despliegue de soluciones basadas en LLMs (Claude, ChatGPT, OpenClaw) y RAG.</p>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="w-14 h-14 bg-navy/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-2xl text-navy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Desarrollo Full-Stack y Low Code</h3>
+                    <p class="text-gray-600 leading-relaxed">Amplia experiencia en TypeScript, React, Angular, C#, ASP.NET Core y Power Platform (Apps, Pages) para desarrollos ágiles y escalables.</p>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="w-14 h-14 bg-apple/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-database text-2xl text-apple"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Gestión de Datos e IA</h3>
+                    <p class="text-gray-600 leading-relaxed">Diseño de arquitecturas de datos (MS SQL, PL-SQL, MySQL), Business Intelligence (Power BI, Tableau) e integración de agentes autónomos.</p>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="w-14 h-14 bg-navy/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-cloud text-2xl text-navy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Ecosistema Cloud & Enterprise</h3>
+                    <p class="text-gray-600 leading-relaxed">Especialista en Azure, Dataverse, SharePoint y gestión de infraestructuras críticas para entornos de alta disponibilidad.</p>
+                </div>
+                <div class="card-hover bg-white p-8 rounded-xl border border-gray-100 shadow-sm md:col-span-2 lg:col-span-2">
+                    <div class="w-14 h-14 bg-apple/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-globe text-2xl text-apple"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Content Management</h3>
+                    <p class="text-gray-600 leading-relaxed">Optimización de plataformas WordPress y SiteCore para entornos de alta exigencia, garantizando rendimiento, seguridad y una experiencia de usuario excepcional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio de Proyectos con Botón "+" -->
+    <section id="proyectos" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Proyectos Destacados</h2>
+                <div class="w-20 h-1 bg-apple mx-auto rounded-full mb-4"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Una selección de soluciones implementadas. Haz clic en "Ver detalles +" para explorar más.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Proyecto 1: Web -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover group">
+                    <div class="h-48 bg-navy flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-laptop-code text-6xl text-white/20 group-hover:scale-110 transition duration-500"></i>
+                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full">WEB</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Modernización de Portales Corporativos</h3>
+                        <p class="text-gray-600 text-sm mb-4">Rediseño y desarrollo de sistemas web robustos para sectores de finanzas y retail.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">ASP.NET Core</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Angular</span>
+                        </div>
+                        <button onclick="toggleProjectDetails(this)" class="w-full py-2 border border-apple text-apple rounded-lg hover:bg-apple hover:text-white transition flex items-center justify-center gap-2 font-medium">
+                            <i class="fas fa-plus"></i>
+                            <span>Ver detalles +</span>
+                        </button>
+                        <div class="hidden mt-4 pt-4 border-t border-gray-100 animate-fade-in">
+                            <h4 class="text-lg font-bold text-navy mb-2">Detalles: Modernización de Portales</h4>
+                            <p class="text-gray-600 text-sm mb-4">Reingeniería completa de la arquitectura frontend y backend, migrando sistemas legacy a ASP.NET Core y Angular, logrando una mejora del 40% en tiempos de carga y una experiencia de usuario moderna y responsiva.</p>
+                            <div class="grid grid-cols-3 gap-2 mb-4">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80" alt="Web 1" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&q=80" alt="Web 2" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                                <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=400&q=80" alt="Web 3" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                            </div>
+                            <a href="https://wa.me/584141561399?text=Hola%20Edwar,%20me%20interesa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proyecto:%20Modernizaci%C3%B3n%20de%20Portales%20Corporativos" target="_blank" class="inline-flex items-center justify-center w-full px-4 py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#128C7E] transition font-semibold gap-2">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                Consultar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Datos -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover group">
+                    <div class="h-48 bg-navyLight flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-chart-line text-6xl text-white/20 group-hover:scale-110 transition duration-500"></i>
+                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full">DATOS</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Dashboard Ejecutivo de Inteligencia de Negocios</h3>
+                        <p class="text-gray-600 text-sm mb-4">Diseño de paneles ejecutivos en Power BI con modelos DAX para optimizar la toma de decisiones.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Power BI</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">SQL Server</span>
+                        </div>
+                        <button onclick="toggleProjectDetails(this)" class="w-full py-2 border border-apple text-apple rounded-lg hover:bg-apple hover:text-white transition flex items-center justify-center gap-2 font-medium">
+                            <i class="fas fa-plus"></i>
+                            <span>Ver detalles +</span>
+                        </button>
+                        <div class="hidden mt-4 pt-4 border-t border-gray-100 animate-fade-in">
+                            <h4 class="text-lg font-bold text-navy mb-2">Detalles: Dashboard Ejecutivo BI</h4>
+                            <p class="text-gray-600 text-sm mb-4">Implementación de modelos tabulares complejos y medidas DAX avanzadas para consolidar fuentes de datos dispares, proporcionando visibilidad en tiempo real de KPIs de compras, finanzas y ventas a la alta dirección.</p>
+                            <div class="grid grid-cols-3 gap-2 mb-4">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80" alt="Data 1" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                                <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&q=80" alt="Data 2" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                                <img src="https://images.unsplash.com/photo-1543286386-713df548e9cc?w=400&q=80" alt="Data 3" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                            </div>
+                            <a href="https://wa.me/584141561399?text=Hola%20Edwar,%20me%20interesa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proyecto:%20Dashboard%20Ejecutivo%20BI" target="_blank" class="inline-flex items-center justify-center w-full px-4 py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#128C7E] transition font-semibold gap-2">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                Consultar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: Cloud -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover group">
+                    <div class="h-48 bg-navy flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-server text-6xl text-white/20 group-hover:scale-110 transition duration-500"></i>
+                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full">CLOUD</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Migración de Middleware Crítico</h3>
+                        <p class="text-gray-600 text-sm mb-4">Liderazgo en la migración y actualización de interfaces de middleware para operaciones críticas en la nube.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Azure</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">.NET</span>
+                        </div>
+                        <button onclick="toggleProjectDetails(this)" class="w-full py-2 border border-apple text-apple rounded-lg hover:bg-apple hover:text-white transition flex items-center justify-center gap-2 font-medium">
+                            <i class="fas fa-plus"></i>
+                            <span>Ver detalles +</span>
+                        </button>
+                        <div class="hidden mt-4 pt-4 border-t border-gray-100 animate-fade-in">
+                            <h4 class="text-lg font-bold text-navy mb-2">Detalles: Migración de Middleware</h4>
+                            <p class="text-gray-600 text-sm mb-4">Rediseño y optimización de los procesos de intercambio de datos utilizando .NET Framework, C# y MVC, mejorando significativamente la velocidad de procesamiento y la interoperabilidad del sistema en entornos Azure para operaciones en Panamá y Brasil.</p>
+                            <div class="grid grid-cols-3 gap-2 mb-4">
+                                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&q=80" alt="Cloud 1" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                                <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&q=80" alt="Cloud 2" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=80" alt="Cloud 3" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                            </div>
+                            <a href="https://wa.me/584141561399?text=Hola%20Edwar,%20me%20interesa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proyecto:%20Migraci%C3%B3n%20de%20Middleware%20Cr%C3%ADtico" target="_blank" class="inline-flex items-center justify-center w-full px-4 py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#128C7E] transition font-semibold gap-2">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                Consultar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4: Automatización -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover group">
+                    <div class="h-48 bg-navyLight flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-cogs text-6xl text-white/20 group-hover:scale-110 transition duration-500"></i>
+                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full">AUTOMATIZACIÓN</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Optimización de Flujos Operativos</h3>
+                        <p class="text-gray-600 text-sm mb-4">Diseño y despliegue de flujos de automatización complejos Low-Code/No-Code.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">n8n</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Make</span>
+                        </div>
+                        <button onclick="toggleProjectDetails(this)" class="w-full py-2 border border-apple text-apple rounded-lg hover:bg-apple hover:text-white transition flex items-center justify-center gap-2 font-medium">
+                            <i class="fas fa-plus"></i>
+                            <span>Ver detalles +</span>
+                        </button>
+                        <div class="hidden mt-4 pt-4 border-t border-gray-100 animate-fade-in">
+                            <h4 class="text-lg font-bold text-navy mb-2">Detalles: Optimización de Flujos</h4>
+                            <p class="text-gray-600 text-sm mb-4">Conexión de flujos inteligentes con fuentes de datos, aplicaciones web y plataformas SaaS, creando ecosistemas que aprovechan la automatización para la toma de decisiones y generación de contenido, reduciendo tiempos de ejecución en un 60%.</p>
+                            <div class="grid grid-cols-3 gap-2 mb-4">
+                                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80" alt="Auto 1" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&q=80" alt="Auto 2" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                                <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&q=80" alt="Auto 3" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                            </div>
+                            <a href="https://wa.me/584141561399?text=Hola%20Edwar,%20me%20interesa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proyecto:%20Optimizaci%C3%B3n%20de%20Flujos%20Operativos" target="_blank" class="inline-flex items-center justify-center w-full px-4 py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#128C7E] transition font-semibold gap-2">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                Consultar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5: IA -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover group md:col-span-2 lg:col-span-2">
+                    <div class="h-48 bg-navy flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-brain text-6xl text-white/20 group-hover:scale-110 transition duration-500"></i>
+                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full">INTELIGENCIA ARTIFICIAL</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Integración de Agentes Autónomos y LLMs</h3>
+                        <p class="text-gray-600 text-sm mb-4">Implementación de soluciones empresariales con Modelos de Lenguaje Grande y arquitectura RAG.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">LLMs</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">RAG</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Python</span>
+                        </div>
+                        <button onclick="toggleProjectDetails(this)" class="w-full py-2 border border-apple text-apple rounded-lg hover:bg-apple hover:text-white transition flex items-center justify-center gap-2 font-medium">
+                            <i class="fas fa-plus"></i>
+                            <span>Ver detalles +</span>
+                        </button>
+                        <div class="hidden mt-4 pt-4 border-t border-gray-100 animate-fade-in">
+                            <h4 class="text-lg font-bold text-navy mb-2">Detalles: Agentes Autónomos y LLMs</h4>
+                            <p class="text-gray-600 text-sm mb-4">Despliegue de soluciones basadas en Claude, ChatGPT y OpenClaw, integrando lógica de automatización asistida por IA. Transformación de flujos de datos tradicionales en sistemas inteligentes capaces de autogestionarse y apoyar la toma de decisiones complejas.</p>
+                            <div class="grid grid-cols-3 gap-2 mb-4">
+                                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&q=80" alt="IA 1" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&q=80" alt="IA 2" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                                <img src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=400&q=80" alt="IA 3" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                            </div>
+                            <a href="https://wa.me/584141561399?text=Hola%20Edwar,%20me%20interesa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proyecto:%20Integraci%C3%B3n%20de%20Agentes%20Aut%C3%B3nomos%20y%20LLMs" target="_blank" class="inline-flex items-center justify-center w-full px-4 py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#128C7E] transition font-semibold gap-2">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                Consultar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-navy text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Conectemos</h2>
+            <div class="w-20 h-1 bg-apple mx-auto rounded-full mb-8"></div>
+            <p class="text-gray-300 text-lg mb-12 max-w-2xl mx-auto">
+                ¿Buscas soluciones innovadoras, resilientes y orientadas a resultados? Estoy disponible para consultorías, proyectos de transformación digital e integración de IA.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <a href="tel:+584141561399" class="flex flex-col items-center p-6 bg-white/5 rounded-xl hover:bg-white/10 transition border border-white/10 hover:border-apple">
+                    <i class="fas fa-phone-alt text-3xl text-apple mb-4"></i>
+                    <span class="text-sm text-gray-400 uppercase tracking-wider">Teléfono</span>
+                    <span class="text-lg font-semibold mt-1">+58 414 1561399</span>
+                </a>
+                <a href="mailto:ejdm2005@gmail.com" class="flex flex-col items-center p-6 bg-white/5 rounded-xl hover:bg-white/10 transition border border-white/10 hover:border-apple">
+                    <i class="fas fa-envelope text-3xl text-apple mb-4"></i>
+                    <span class="text-sm text-gray-400 uppercase tracking-wider">Correo Electrónico</span>
+                    <span class="text-lg font-semibold mt-1 break-all">ejdm2005@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/edwarduque/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center p-6 bg-white/5 rounded-xl hover:bg-white/10 transition border border-white/10 hover:border-apple">
+                    <i class="fab fa-linkedin text-3xl text-apple mb-4"></i>
+                    <span class="text-sm text-gray-400 uppercase tracking-wider">LinkedIn</span>
+                    <span class="text-lg font-semibold mt-1">in/edwarduque</span>
+                </a>
+            </div>
+
+            <!-- Iconos de Redes Sociales -->
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-apple hover:text-white transition duration-300" aria-label="X (Twitter)">
+                    <i class="fab fa-x-twitter text-xl"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-apple hover:text-white transition duration-300" aria-label="Instagram">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-apple hover:text-white transition duration-300" aria-label="Facebook">
+                    <i class="fab fa-facebook-f text-xl"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-apple hover:text-white transition duration-300" aria-label="YouTube">
+                    <i class="fab fa-youtube text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/edwarduque/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-apple hover:text-white transition duration-300" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0a1120] text-gray-400 py-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <!-- LOGO SVG MEJORADO EN FOOTER -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="w-10 h-10">
+                    <defs>
+                        <linearGradient id="blueGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#1E3A8A"/>
+                            <stop offset="100%" stop-color="#0F172A"/>
+                        </linearGradient>
+                        <linearGradient id="greenGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#76C043"/>
+                            <stop offset="100%" stop-color="#5A9A30"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="100" cy="90" r="50" fill="none" stroke="url(#blueGradFooter)" stroke-width="2.5"/>
+                    <ellipse cx="100" cy="90" rx="50" ry="18" fill="none" stroke="url(#greenGradFooter)" stroke-width="1.5" opacity="0.8"/>
+                    <ellipse cx="100" cy="90" rx="18" ry="50" fill="none" stroke="url(#greenGradFooter)" stroke-width="1.5" opacity="0.8"/>
+                    <path d="M 50 90 Q 100 140 150 90" fill="none" stroke="url(#blueGradFooter)" stroke-width="1.5"/>
+                    <path d="M 50 90 Q 100 40 150 90" fill="none" stroke="url(#blueGradFooter)" stroke-width="1.5"/>
+                    <circle cx="100" cy="90" r="58" fill="none" stroke="url(#greenGradFooter)" stroke-width="1" stroke-dasharray="6 6" opacity="0.7"/>
+                    <path d="M 70 125 L 78 110 L 122 110 L 130 125 Z" fill="url(#blueGradFooter)"/>
+                    <rect x="80" y="112" width="40" height="14" fill="#1E3A8A" rx="1.5"/>
+                    <rect x="83" y="114" width="34" height="10" fill="url(#greenGradFooter)" opacity="0.5" rx="1"/>
+                    <path d="M 60 125 L 140 125 L 145 130 L 55 130 Z" fill="url(#greenGradFooter)"/>
+                    <line x1="100" y1="90" x2="100" y2="110" stroke="url(#greenGradFooter)" stroke-width="1.5"/>
+                    <circle cx="100" cy="90" r="4" fill="#76C043"/>
+                </svg>
+                <span class="text-sm">© 2024 Edwar Duque. Todos los derechos reservados.</span>
+            </div>
+            <div class="text-sm">
+                Diseñado con <i class="fas fa-heart text-apple mx-1"></i> para la excelencia tecnológica.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Menú móvil
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Función para expandir detalles de proyectos
+        function toggleProjectDetails(button) {
+            const detailsDiv = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            const textSpan = button.querySelector('span');
+            
+            if (detailsDiv.classList.contains('hidden')) {
+                detailsDiv.classList.remove('hidden');
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+                textSpan.textContent = 'Ocultar detalles';
+                button.classList.add('bg-apple', 'text-white');
+                button.classList.remove('text-apple');
+            } else {
+                detailsDiv.classList.add('hidden');
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
+                textSpan.textContent = 'Ver detalles +';
+                button.classList.remove('bg-apple', 'text-white');
+                button.classList.add('text-apple');
+            }
+        }
+    </script>
+</body>
+</html>
