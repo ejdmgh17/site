@@ -6,13 +6,12 @@
     <title>EJDM | Edwar Duque - Consultor de Tecnología & IA</title>
     <meta name="description" content="Portafolio profesional de Edwar Duque, Ingeniero de Sistemas y Consultor en IA, Automatización, Cloud y Desarrollo Full-Stack.">
     
-    <!-- Favicon con el nuevo logo SVG -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3CradialGradient id='globe' cx='50%25' cy='40%25' r='60%25'%3E%3Cstop offset='0%25' stop-color='%231E3A8A'/%3E%3Cstop offset='100%25' stop-color='%230F172A'/%3E%3C/radialGradient%3E%3CradialGradient id='glow' cx='50%25' cy='50%25' r='50%25'%3E%3Cstop offset='0%25' stop-color='%2376C043' stop-opacity='0.4'/%3E%3Cstop offset='100%25' stop-color='%2376C043' stop-opacity='0'/%3E%3C/radialGradient%3E%3Cfilter id='blur'%3E%3CfeGaussianBlur stdDeviation='1.5'/%3E%3C/filter%3E%3C/defs%3E%3Ccircle cx='100' cy='100' r='55' fill='url(%23globe)'/%3E%3Ccircle cx='100' cy='100' r='70' fill='url(%23glow)'/%3E%3Cellipse cx='100' cy='100' rx='55' ry='15' fill='none' stroke='%2376C043' stroke-width='0.8' opacity='0.5'/%3E%3Cellipse cx='100' cy='100' rx='15' ry='55' fill='none' stroke='%2376C043' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M 55 100 Q 100 145 145 100' fill='none' stroke='%2376C043' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M 55 100 Q 100 55 145 100' fill='none' stroke='%2376C043' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M 75 70 Q 85 75 80 90 Q 75 100 85 110 Q 90 115 85 125' fill='%2376C043' opacity='0.7'/%3E%3Cpath d='M 110 75 Q 120 80 115 95 Q 110 105 120 115' fill='%2376C043' opacity='0.7'/%3E%3Cellipse cx='100' cy='100' rx='75' ry='20' fill='none' stroke='%233B82F6' stroke-width='2' opacity='0.8' filter='url(%23blur)' transform='rotate(-15 100 100)'/%3E%3Cellipse cx='100' cy='100' rx='80' ry='25' fill='none' stroke='%2360A5FA' stroke-width='1' opacity='0.5' filter='url(%23blur)' transform='rotate(10 100 100)'/%3E%3C/svg%3E" type="image/svg+xml">
+    <!-- Favicon con el logo SVG -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3CradialGradient id='globe' cx='50%25' cy='40%25' r='60%25'%3E%3Cstop offset='0%25' stop-color='%231E3A8A'/%3E%3Cstop offset='100%25' stop-color='%230F172A'/%3E%3C/radialGradient%3E%3CradialGradient id='glow' cx='50%25' cy='50%25' r='50%25'%3E%3Cstop offset='0%25' stop-color='%2376C043' stop-opacity='0.4'/%3E%3Cstop offset='100%25' stop-color='%2376C043' stop-opacity='0'/%3E%3C/radialGradient%3E%3Cfilter id='blur'%3E%3CfeGaussianBlur stdDeviation='1.5'/%3E%3C/filter%3E%3C/defs%3E%3Ccircle cx='100' cy='100' r='55' fill='url(%23globe)'/%3E%3Ccircle cx='100' cy='100' r='70' fill='url(%23glow)'/%3E%3Cellipse cx='100' cy='100' rx='55' ry='15' fill='none' stroke='%2376C043' stroke-width='0.8' opacity='0.5'/%3E%3Cellipse cx='100' cy='100' rx='15' ry='55' fill='none' stroke='%2376C043' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M 55 100 Q 100 145 145 100' fill='none' stroke='%2376C043' stroke-width='0.8' opacity='0.5'/%3E%3Cpath d='M 55 100 Q 100 55 145 100' fill='none' stroke='%2376C043' stroke-width='0.8' opacity='0.5'/%3E%3Cellipse cx='100' cy='100' rx='75' ry='20' fill='none' stroke='%233B82F6' stroke-width='2' opacity='0.8' filter='url(%23blur)' transform='rotate(-15 100 100)'/%3E%3Cellipse cx='100' cy='100' rx='80' ry='25' fill='none' stroke='%2360A5FA' stroke-width='1' opacity='0.5' filter='url(%23blur)' transform='rotate(10 100 100)'/%3E%3C/svg%3E" type="image/svg+xml">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Configuración de colores personalizados -->
     <script>
         tailwind.config = {
             theme: {
@@ -20,6 +19,7 @@
                     colors: {
                         navy: '#0F172A',
                         navyLight: '#1E3A8A',
+                        navySoft: '#1e293b',
                         apple: '#76C043',
                         appleDark: '#5A9A30',
                     },
@@ -31,10 +31,7 @@
         }
     </script>
 
-    <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome 6.5.1 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
@@ -75,6 +72,16 @@
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-3px); }
         }
+        .lang-btn.active {
+            background-color: #76C043;
+            color: white;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 50%, #0F172A 100%);
+        }
+        .section-navy {
+            background: linear-gradient(180deg, #0F172A 0%, #1e293b 100%);
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900 antialiased">
@@ -84,7 +91,6 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center gap-3">
-                    <!-- NUEVO LOGO SVG - Globo terráqueo digital con portátil -->
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="w-12 h-12 md:w-14 md:h-14">
                         <defs>
                             <radialGradient id="globeGrad" cx="50%" cy="40%" r="60%">
@@ -121,86 +127,59 @@
                                 <circle cx="100" cy="100" r="55"/>
                             </clipPath>
                         </defs>
-                        
-                        <!-- Aura verde alrededor del globo -->
                         <circle cx="100" cy="100" r="75" fill="url(#glowGrad)"/>
-                        
-                        <!-- Globo terráqueo base -->
                         <circle cx="100" cy="100" r="55" fill="url(#globeGrad)"/>
-                        
-                        <!-- Cuadrícula digital del globo -->
                         <g clip-path="url(#globeClip)" opacity="0.4">
-                            <!-- Líneas de latitud -->
                             <ellipse cx="100" cy="100" rx="55" ry="12" fill="none" stroke="#76C043" stroke-width="0.8"/>
                             <ellipse cx="100" cy="85" rx="50" ry="10" fill="none" stroke="#76C043" stroke-width="0.6"/>
                             <ellipse cx="100" cy="115" rx="50" ry="10" fill="none" stroke="#76C043" stroke-width="0.6"/>
-                            <ellipse cx="100" cy="70" rx="40" ry="8" fill="none" stroke="#76C043" stroke-width="0.5"/>
-                            <ellipse cx="100" cy="130" rx="40" ry="8" fill="none" stroke="#76C043" stroke-width="0.5"/>
-                            <!-- Líneas de longitud -->
                             <ellipse cx="100" cy="100" rx="12" ry="55" fill="none" stroke="#76C043" stroke-width="0.8"/>
                             <ellipse cx="100" cy="100" rx="28" ry="55" fill="none" stroke="#76C043" stroke-width="0.6"/>
                             <ellipse cx="100" cy="100" rx="42" ry="55" fill="none" stroke="#76C043" stroke-width="0.6"/>
                         </g>
-                        
-                        <!-- Continentes simplificados (América, África, Europa) -->
                         <g clip-path="url(#globeClip)">
-                            <!-- América del Norte y Sur -->
                             <path d="M 60 65 Q 65 60 72 62 Q 78 65 75 72 Q 72 78 68 82 Q 65 88 68 95 Q 72 100 70 108 Q 68 115 72 120 Q 75 125 70 130 Q 65 132 62 128 Q 58 120 60 110 Q 62 100 58 90 Q 55 80 60 65 Z" fill="#76C043" opacity="0.75"/>
-                            <!-- África y Europa -->
                             <path d="M 105 60 Q 112 58 118 62 Q 122 68 118 75 Q 115 82 118 90 Q 122 100 120 110 Q 118 118 115 125 Q 112 130 108 128 Q 105 122 108 112 Q 110 102 106 92 Q 102 82 105 72 Q 103 65 105 60 Z" fill="#76C043" opacity="0.75"/>
-                            <!-- Pequeña masa continental (Asia/Europa) -->
                             <path d="M 125 70 Q 135 68 142 72 Q 148 78 145 85 Q 140 90 135 88 Q 130 85 128 78 Q 125 74 125 70 Z" fill="#76C043" opacity="0.6"/>
                         </g>
-                        
-                        <!-- Anillos de luz azul brillante (efecto psicodélico digital) -->
                         <ellipse cx="100" cy="100" rx="78" ry="22" fill="none" stroke="#3B82F6" stroke-width="2.5" opacity="0.9" filter="url(#ringGlow)" class="logo-ring-1"/>
                         <ellipse cx="100" cy="100" rx="82" ry="26" fill="none" stroke="#60A5FA" stroke-width="1.5" opacity="0.6" filter="url(#softGlow)" class="logo-ring-2"/>
-                        <ellipse cx="100" cy="100" rx="75" ry="20" fill="none" stroke="#93C5FD" stroke-width="1" opacity="0.4" class="logo-ring-1"/>
-                        
-                        <!-- Portátil flotante (en ángulo, sobre el globo) -->
                         <g class="logo-laptop">
-                            <!-- Sombra del portátil -->
                             <ellipse cx="130" cy="145" rx="25" ry="4" fill="#0F172A" opacity="0.3"/>
-                            
-                            <!-- Base del portátil (teclado) -->
                             <path d="M 105 125 L 155 120 L 160 130 L 108 135 Z" fill="url(#laptopBody)" stroke="#6B7280" stroke-width="0.5"/>
-                            <!-- Detalles del teclado -->
                             <line x1="115" y1="127" x2="150" y2="123" stroke="#4B5563" stroke-width="0.3"/>
                             <line x1="113" y1="130" x2="152" y2="126" stroke="#4B5563" stroke-width="0.3"/>
-                            <line x1="111" y1="133" x2="155" y2="129" stroke="#4B5563" stroke-width="0.3"/>
-                            
-                            <!-- Pantalla del portátil (inclinada) -->
                             <path d="M 108 125 L 155 120 L 152 95 L 110 100 Z" fill="url(#laptopScreen)" stroke="#6B7280" stroke-width="0.5"/>
-                            
-                            <!-- Código en la pantalla -->
-                            <g opacity="0.9">
-                                <line x1="115" y1="105" x2="135" y2="103" stroke="#76C043" stroke-width="1"/>
-                                <line x1="115" y1="108" x2="140" y2="105" stroke="#3B82F6" stroke-width="0.8"/>
-                                <line x1="115" y1="111" x2="130" y2="109" stroke="#76C043" stroke-width="0.8"/>
-                                <line x1="118" y1="114" x2="145" y2="111" stroke="#93C5FD" stroke-width="0.8"/>
-                                <line x1="118" y1="117" x2="138" y2="115" stroke="#76C043" stroke-width="0.8"/>
-                                <line x1="120" y1="120" x2="142" y2="118" stroke="#3B82F6" stroke-width="0.8"/>
-                            </g>
-                            
-                            <!-- Brillo en la pantalla -->
-                            <path d="M 110 100 L 152 95 L 150 100 L 112 105 Z" fill="#60A5FA" opacity="0.15"/>
+                            <line x1="115" y1="105" x2="135" y2="103" stroke="#76C043" stroke-width="1"/>
+                            <line x1="115" y1="108" x2="140" y2="105" stroke="#3B82F6" stroke-width="0.8"/>
+                            <line x1="115" y1="111" x2="130" y2="109" stroke="#76C043" stroke-width="0.8"/>
+                            <line x1="118" y1="114" x2="145" y2="111" stroke="#93C5FD" stroke-width="0.8"/>
+                            <line x1="118" y1="117" x2="138" y2="115" stroke="#76C043" stroke-width="0.8"/>
+                            <line x1="120" y1="120" x2="142" y2="118" stroke="#3B82F6" stroke-width="0.8"/>
                         </g>
-                        
-                        <!-- Puntos de conexión brillantes -->
                         <circle cx="45" cy="100" r="2" fill="#76C043" filter="url(#softGlow)"/>
                         <circle cx="155" cy="100" r="2" fill="#76C043" filter="url(#softGlow)"/>
                         <circle cx="100" cy="45" r="2" fill="#76C043" filter="url(#softGlow)"/>
                     </svg>
                     <span class="text-xl font-bold text-navy hidden sm:block">EJDM</span>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#inicio" class="text-gray-700 hover:text-apple font-medium transition">Inicio</a>
-                    <a href="#perfil" class="text-gray-700 hover:text-apple font-medium transition">Perfil</a>
-                    <a href="#especialidades" class="text-gray-700 hover:text-apple font-medium transition">Especialidades</a>
-                    <a href="#proyectos" class="text-gray-700 hover:text-apple font-medium transition">Proyectos</a>
-                    <a href="#contacto" class="px-5 py-2 bg-navy text-white rounded-full font-medium hover:bg-apple transition duration-300">Contacto</a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#inicio" class="text-gray-700 hover:text-apple font-medium transition" data-i18n="nav_home">Inicio</a>
+                    <a href="#perfil" class="text-gray-700 hover:text-apple font-medium transition" data-i18n="nav_profile">Perfil</a>
+                    <a href="#especialidades" class="text-gray-700 hover:text-apple font-medium transition" data-i18n="nav_skills">Especialidades</a>
+                    <a href="#proyectos" class="text-gray-700 hover:text-apple font-medium transition" data-i18n="nav_projects">Proyectos</a>
+                    <a href="#contacto" class="px-5 py-2 bg-navy text-white rounded-full font-medium hover:bg-apple transition duration-300" data-i18n="nav_contact">Contacto</a>
+                    <!-- Selector de idioma -->
+                    <div class="flex items-center bg-gray-100 rounded-full p-1 border border-gray-200">
+                        <button onclick="changeLanguage('es')" class="lang-btn px-3 py-1 rounded-full text-xs font-semibold transition" id="btn-es">ES</button>
+                        <button onclick="changeLanguage('en')" class="lang-btn px-3 py-1 rounded-full text-xs font-semibold transition" id="btn-en">EN</button>
+                    </div>
                 </div>
-                <div class="md:hidden flex items-center">
+                <div class="md:hidden flex items-center gap-3">
+                    <div class="flex items-center bg-gray-100 rounded-full p-1 border border-gray-200">
+                        <button onclick="changeLanguage('es')" class="lang-btn px-2 py-1 rounded-full text-xs font-semibold transition" id="btn-es-m">ES</button>
+                        <button onclick="changeLanguage('en')" class="lang-btn px-2 py-1 rounded-full text-xs font-semibold transition" id="btn-en-m">EN</button>
+                    </div>
                     <button id="mobile-menu-btn" class="text-navy hover:text-apple focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
@@ -209,32 +188,39 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
             <div class="px-4 pt-2 pb-6 space-y-2">
-                <a href="#inicio" class="block px-3 py-2 text-gray-700 hover:text-apple font-medium">Inicio</a>
-                <a href="#perfil" class="block px-3 py-2 text-gray-700 hover:text-apple font-medium">Perfil</a>
-                <a href="#especialidades" class="block px-3 py-2 text-gray-700 hover:text-apple font-medium">Especialidades</a>
-                <a href="#proyectos" class="block px-3 py-2 text-gray-700 hover:text-apple font-medium">Proyectos</a>
-                <a href="#contacto" class="block px-3 py-2 text-apple font-bold">Contacto</a>
+                <a href="#inicio" class="block px-3 py-2 text-gray-700 hover:text-apple font-medium" data-i18n="nav_home">Inicio</a>
+                <a href="#perfil" class="block px-3 py-2 text-gray-700 hover:text-apple font-medium" data-i18n="nav_profile">Perfil</a>
+                <a href="#especialidades" class="block px-3 py-2 text-gray-700 hover:text-apple font-medium" data-i18n="nav_skills">Especialidades</a>
+                <a href="#proyectos" class="block px-3 py-2 text-gray-700 hover:text-apple font-medium" data-i18n="nav_projects">Proyectos</a>
+                <a href="#contacto" class="block px-3 py-2 text-apple font-bold" data-i18n="nav_contact">Contacto</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="pt-32 pb-20 lg:pt-40 lg:pb-28 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-apple/10 text-appleDark font-semibold text-sm tracking-wide uppercase">
-                Consultor de Tecnología & Automatización Inteligente
+    <!-- Hero Section con fondo azul marino -->
+    <section id="inicio" class="hero-bg pt-32 pb-20 lg:pt-40 lg:pb-28 text-white relative overflow-hidden">
+        <!-- Decoración de fondo -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-apple/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-navyLight/30 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-apple/20 text-apple font-semibold text-sm tracking-wide uppercase border border-apple/30">
+                <span data-i18n="hero_badge">Consultor de Tecnología & Automatización Inteligente</span>
             </div>
-            <h1 class="text-4xl md:text-6xl font-extrabold text-navy tracking-tight mb-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
                 Edwar José Duque Márquez
             </h1>
-            <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-10 font-light">
-                Transformando retos empresariales en soluciones tecnológicas de alto impacto mediante <span class="text-apple font-semibold">Inteligencia Artificial</span>, <span class="text-apple font-semibold">Cloud</span> y <span class="text-apple font-semibold">Arquitectura de Software</span>.
+            <p class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10 font-light">
+                <span data-i18n="hero_subtitle">Transformando retos empresariales en soluciones tecnológicas de alto impacto mediante</span>
+                <span class="text-apple font-semibold" data-i18n="hero_ai">Inteligencia Artificial</span>,
+                <span class="text-apple font-semibold" data-i18n="hero_cloud">Cloud</span> y
+                <span class="text-apple font-semibold" data-i18n="hero_arch">Arquitectura de Software</span>.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#proyectos" class="px-8 py-4 bg-navy text-white rounded-lg font-semibold hover:bg-navyLight transition duration-300 shadow-lg shadow-navy/20">
+                <a href="#proyectos" class="px-8 py-4 bg-apple text-navy rounded-lg font-semibold hover:bg-white transition duration-300 shadow-lg" data-i18n="hero_btn_projects">
                     Ver Proyectos
                 </a>
-                <a href="#contacto" class="px-8 py-4 bg-white text-navy border-2 border-navy rounded-lg font-semibold hover:bg-apple hover:text-white hover:border-apple transition duration-300">
+                <a href="#contacto" class="px-8 py-4 bg-transparent text-white border-2 border-white rounded-lg font-semibold hover:bg-white hover:text-navy transition duration-300" data-i18n="hero_btn_connect">
                     Conectar Ahora
                 </a>
             </div>
@@ -242,83 +228,83 @@
     </section>
 
     <!-- Perfil Profesional -->
-    <section id="perfil" class="py-20 bg-gray-50">
+    <section id="perfil" class="py-20 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Perfil Profesional</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4" data-i18n="profile_title">Perfil Profesional</h2>
                 <div class="w-20 h-1 bg-apple mx-auto rounded-full"></div>
             </div>
-            <div class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
-                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            <div class="bg-gray-50 p-8 md:p-12 rounded-2xl shadow-sm border-l-4 border-navy">
+                <p class="text-lg text-gray-700 leading-relaxed mb-6" data-i18n="profile_p1">
                     Ingeniero de Sistemas con más de 24 años de trayectoria transformando retos empresariales en soluciones tecnológicas de alto impacto. Mi enfoque combina una sólida base en ingeniería de software con una visión estratégica de consultoría, especializado en arquitectura web, análisis de datos, soluciones en la nube, Inteligencia Artificial y automatización inteligente.
                 </p>
-                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                <p class="text-lg text-gray-700 leading-relaxed mb-6" data-i18n="profile_p2">
                     A lo largo de mi carrera, he liderado proyectos integrales para diversos sectores, aportando valor mediante la modernización de portales corporativos y el desarrollo de sistemas robustos. Mi metodología se centra en entender el modelo de negocio para implementar la arquitectura tecnológica exacta que impulse el crecimiento y la eficiencia.
                 </p>
-                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                <p class="text-lg text-gray-700 leading-relaxed mb-6" data-i18n="profile_p3">
                     Ya sea liderando migraciones, diseñando arquitecturas basadas en IA o configurando ecosistemas automatizados, mi prioridad es siempre la continuidad operativa y la rentabilidad del cliente.
                 </p>
-                <p class="text-lg text-navy font-semibold leading-relaxed border-l-4 border-apple pl-4 italic">
+                <p class="text-lg text-navy font-semibold leading-relaxed border-l-4 border-apple pl-4 italic" data-i18n="profile_quote">
                     "Siempre interesado en conectar con líderes y equipos que buscan soluciones innovadoras, resilientes y orientadas a resultados."
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Especialidades -->
-    <section id="especialidades" class="py-20 bg-white">
+    <!-- Especialidades con fondo azul marino -->
+    <section id="especialidades" class="section-navy py-20 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Especialidades y Stack Tecnológico</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="skills_title">Especialidades y Stack Tecnológico</h2>
                 <div class="w-20 h-1 bg-apple mx-auto rounded-full"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card-hover bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
-                    <div class="w-14 h-14 bg-apple/10 rounded-lg flex items-center justify-center mb-6">
+                <div class="card-hover bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-apple">
+                    <div class="w-14 h-14 bg-apple/20 rounded-lg flex items-center justify-center mb-6">
                         <i class="fas fa-robot text-2xl text-apple"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-navy mb-3">AI & Automation</h3>
-                    <p class="text-gray-600 leading-relaxed">Implementación de flujos inteligentes con n8n, Make, Zapier, Power Automate y despliegue de soluciones basadas en LLMs (Claude, ChatGPT, OpenClaw) y RAG.</p>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="skill_ai_title">AI & Automation</h3>
+                    <p class="text-gray-300 leading-relaxed" data-i18n="skill_ai_desc">Implementación de flujos inteligentes con n8n, Make, Zapier, Power Automate y despliegue de soluciones basadas en LLMs (Claude, ChatGPT, OpenClaw) y RAG.</p>
                 </div>
-                <div class="card-hover bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
-                    <div class="w-14 h-14 bg-navy/10 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-code text-2xl text-navy"></i>
+                <div class="card-hover bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-apple">
+                    <div class="w-14 h-14 bg-apple/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-2xl text-apple"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-navy mb-3">Desarrollo Full-Stack y Low Code</h3>
-                    <p class="text-gray-600 leading-relaxed">Amplia experiencia en TypeScript, React, Angular, C#, ASP.NET Core y Power Platform (Apps, Pages) para desarrollos ágiles y escalables.</p>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="skill_dev_title">Desarrollo Full-Stack y Low Code</h3>
+                    <p class="text-gray-300 leading-relaxed" data-i18n="skill_dev_desc">Amplia experiencia en TypeScript, React, Angular, C#, ASP.NET Core y Power Platform (Apps, Pages) para desarrollos ágiles y escalables.</p>
                 </div>
-                <div class="card-hover bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
-                    <div class="w-14 h-14 bg-apple/10 rounded-lg flex items-center justify-center mb-6">
+                <div class="card-hover bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-apple">
+                    <div class="w-14 h-14 bg-apple/20 rounded-lg flex items-center justify-center mb-6">
                         <i class="fas fa-database text-2xl text-apple"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-navy mb-3">Gestión de Datos e IA</h3>
-                    <p class="text-gray-600 leading-relaxed">Diseño de arquitecturas de datos (MS SQL, PL-SQL, MySQL), Business Intelligence (Power BI, Tableau) e integración de agentes autónomos.</p>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="skill_data_title">Gestión de Datos e IA</h3>
+                    <p class="text-gray-300 leading-relaxed" data-i18n="skill_data_desc">Diseño de arquitecturas de datos (MS SQL, PL-SQL, MySQL), Business Intelligence (Power BI, Tableau) e integración de agentes autónomos.</p>
                 </div>
-                <div class="card-hover bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
-                    <div class="w-14 h-14 bg-navy/10 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-cloud text-2xl text-navy"></i>
+                <div class="card-hover bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-apple">
+                    <div class="w-14 h-14 bg-apple/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-cloud text-2xl text-apple"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-navy mb-3">Ecosistema Cloud & Enterprise</h3>
-                    <p class="text-gray-600 leading-relaxed">Especialista en Azure, Dataverse, SharePoint y gestión de infraestructuras críticas para entornos de alta disponibilidad.</p>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="skill_cloud_title">Ecosistema Cloud & Enterprise</h3>
+                    <p class="text-gray-300 leading-relaxed" data-i18n="skill_cloud_desc">Especialista en Azure, Dataverse, SharePoint y gestión de infraestructuras críticas para entornos de alta disponibilidad.</p>
                 </div>
-                <div class="card-hover bg-white p-8 rounded-xl border border-gray-100 shadow-sm md:col-span-2 lg:col-span-2">
-                    <div class="w-14 h-14 bg-apple/10 rounded-lg flex items-center justify-center mb-6">
+                <div class="card-hover bg-white/5 backdrop-blur-sm p-8 rounded-xl border border-white/10 hover:border-apple md:col-span-2 lg:col-span-2">
+                    <div class="w-14 h-14 bg-apple/20 rounded-lg flex items-center justify-center mb-6">
                         <i class="fas fa-globe text-2xl text-apple"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-navy mb-3">Content Management</h3>
-                    <p class="text-gray-600 leading-relaxed">Optimización de plataformas WordPress y SiteCore para entornos de alta exigencia, garantizando rendimiento, seguridad y una experiencia de usuario excepcional.</p>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="skill_cms_title">Content Management</h3>
+                    <p class="text-gray-300 leading-relaxed" data-i18n="skill_cms_desc">Optimización de plataformas WordPress y SiteCore para entornos de alta exigencia, garantizando rendimiento, seguridad y una experiencia de usuario excepcional.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portafolio de Proyectos con Botón "+" -->
+    <!-- Portafolio de Proyectos -->
     <section id="proyectos" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Proyectos Destacados</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4" data-i18n="projects_title">Proyectos Destacados</h2>
                 <div class="w-20 h-1 bg-apple mx-auto rounded-full mb-4"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">Una selección de soluciones implementadas. Haz clic en "Ver detalles +" para explorar más.</p>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-i18n="projects_subtitle">Una selección de soluciones implementadas. Haz clic en "Ver detalles +" para explorar más.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -326,31 +312,31 @@
                 <!-- Proyecto 1: Web -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover group">
                     <div class="h-48 bg-navy flex items-center justify-center relative overflow-hidden">
-                        <i class="fas fa-laptop-code text-6xl text-white/20 group-hover:scale-110 transition duration-500"></i>
-                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full">WEB</div>
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80" alt="Web Development" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full z-10">WEB</div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-navy mb-2">Modernización de Portales Corporativos</h3>
-                        <p class="text-gray-600 text-sm mb-4">Rediseño y desarrollo de sistemas web robustos para sectores de finanzas y retail.</p>
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="proj1_title">Modernización de Portales Corporativos</h3>
+                        <p class="text-gray-600 text-sm mb-4" data-i18n="proj1_short">Rediseño y desarrollo de sistemas web robustos para sectores de finanzas y retail.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">ASP.NET Core</span>
                             <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Angular</span>
                         </div>
                         <button onclick="toggleProjectDetails(this)" class="w-full py-2 border border-apple text-apple rounded-lg hover:bg-apple hover:text-white transition flex items-center justify-center gap-2 font-medium">
                             <i class="fas fa-plus"></i>
-                            <span>Ver detalles +</span>
+                            <span data-i18n="btn_details">Ver detalles +</span>
                         </button>
                         <div class="hidden mt-4 pt-4 border-t border-gray-100 animate-fade-in">
-                            <h4 class="text-lg font-bold text-navy mb-2">Detalles: Modernización de Portales</h4>
-                            <p class="text-gray-600 text-sm mb-4">Reingeniería completa de la arquitectura frontend y backend, migrando sistemas legacy a ASP.NET Core y Angular, logrando una mejora del 40% en tiempos de carga y una experiencia de usuario moderna y responsiva.</p>
+                            <h4 class="text-lg font-bold text-navy mb-2" data-i18n="proj1_detail_title">Detalles: Modernización de Portales</h4>
+                            <p class="text-gray-600 text-sm mb-4" data-i18n="proj1_detail_desc">Reingeniería completa de la arquitectura frontend y backend, migrando sistemas legacy a ASP.NET Core y Angular, logrando una mejora del 40% en tiempos de carga y una experiencia de usuario moderna y responsiva.</p>
                             <div class="grid grid-cols-3 gap-2 mb-4">
-                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80" alt="Web 1" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=80" alt="Web 1" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition" onerror="this.src='https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&q=80'">
                                 <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&q=80" alt="Web 2" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
                                 <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=400&q=80" alt="Web 3" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
                             </div>
                             <a href="https://wa.me/584141561399?text=Hola%20Edwar,%20me%20interesa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proyecto:%20Modernizaci%C3%B3n%20de%20Portales%20Corporativos" target="_blank" class="inline-flex items-center justify-center w-full px-4 py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#128C7E] transition font-semibold gap-2">
                                 <i class="fab fa-whatsapp text-xl"></i>
-                                Consultar por WhatsApp
+                                <span data-i18n="btn_whatsapp">Consultar por WhatsApp</span>
                             </a>
                         </div>
                     </div>
@@ -359,23 +345,23 @@
                 <!-- Proyecto 2: Datos -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover group">
                     <div class="h-48 bg-navyLight flex items-center justify-center relative overflow-hidden">
-                        <i class="fas fa-chart-line text-6xl text-white/20 group-hover:scale-110 transition duration-500"></i>
-                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full">DATOS</div>
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Data Analytics" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full z-10">DATOS</div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-navy mb-2">Dashboard Ejecutivo de Inteligencia de Negocios</h3>
-                        <p class="text-gray-600 text-sm mb-4">Diseño de paneles ejecutivos en Power BI con modelos DAX para optimizar la toma de decisiones.</p>
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="proj2_title">Dashboard Ejecutivo de Inteligencia de Negocios</h3>
+                        <p class="text-gray-600 text-sm mb-4" data-i18n="proj2_short">Diseño de paneles ejecutivos en Power BI con modelos DAX para optimizar la toma de decisiones.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Power BI</span>
                             <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">SQL Server</span>
                         </div>
                         <button onclick="toggleProjectDetails(this)" class="w-full py-2 border border-apple text-apple rounded-lg hover:bg-apple hover:text-white transition flex items-center justify-center gap-2 font-medium">
                             <i class="fas fa-plus"></i>
-                            <span>Ver detalles +</span>
+                            <span data-i18n="btn_details">Ver detalles +</span>
                         </button>
                         <div class="hidden mt-4 pt-4 border-t border-gray-100 animate-fade-in">
-                            <h4 class="text-lg font-bold text-navy mb-2">Detalles: Dashboard Ejecutivo BI</h4>
-                            <p class="text-gray-600 text-sm mb-4">Implementación de modelos tabulares complejos y medidas DAX avanzadas para consolidar fuentes de datos dispares, proporcionando visibilidad en tiempo real de KPIs de compras, finanzas y ventas a la alta dirección.</p>
+                            <h4 class="text-lg font-bold text-navy mb-2" data-i18n="proj2_detail_title">Detalles: Dashboard Ejecutivo BI</h4>
+                            <p class="text-gray-600 text-sm mb-4" data-i18n="proj2_detail_desc">Implementación de modelos tabulares complejos y medidas DAX avanzadas para consolidar fuentes de datos dispares, proporcionando visibilidad en tiempo real de KPIs de compras, finanzas y ventas a la alta dirección.</p>
                             <div class="grid grid-cols-3 gap-2 mb-4">
                                 <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80" alt="Data 1" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
                                 <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&q=80" alt="Data 2" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
@@ -383,7 +369,7 @@
                             </div>
                             <a href="https://wa.me/584141561399?text=Hola%20Edwar,%20me%20interesa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proyecto:%20Dashboard%20Ejecutivo%20BI" target="_blank" class="inline-flex items-center justify-center w-full px-4 py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#128C7E] transition font-semibold gap-2">
                                 <i class="fab fa-whatsapp text-xl"></i>
-                                Consultar por WhatsApp
+                                <span data-i18n="btn_whatsapp">Consultar por WhatsApp</span>
                             </a>
                         </div>
                     </div>
@@ -392,23 +378,23 @@
                 <!-- Proyecto 3: Cloud -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover group">
                     <div class="h-48 bg-navy flex items-center justify-center relative overflow-hidden">
-                        <i class="fas fa-server text-6xl text-white/20 group-hover:scale-110 transition duration-500"></i>
-                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full">CLOUD</div>
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80" alt="Cloud Computing" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full z-10">CLOUD</div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-navy mb-2">Migración de Middleware Crítico</h3>
-                        <p class="text-gray-600 text-sm mb-4">Liderazgo en la migración y actualización de interfaces de middleware para operaciones críticas en la nube.</p>
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="proj3_title">Migración de Middleware Crítico</h3>
+                        <p class="text-gray-600 text-sm mb-4" data-i18n="proj3_short">Liderazgo en la migración y actualización de interfaces de middleware para operaciones críticas en la nube.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Azure</span>
                             <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">.NET</span>
                         </div>
                         <button onclick="toggleProjectDetails(this)" class="w-full py-2 border border-apple text-apple rounded-lg hover:bg-apple hover:text-white transition flex items-center justify-center gap-2 font-medium">
                             <i class="fas fa-plus"></i>
-                            <span>Ver detalles +</span>
+                            <span data-i18n="btn_details">Ver detalles +</span>
                         </button>
                         <div class="hidden mt-4 pt-4 border-t border-gray-100 animate-fade-in">
-                            <h4 class="text-lg font-bold text-navy mb-2">Detalles: Migración de Middleware</h4>
-                            <p class="text-gray-600 text-sm mb-4">Rediseño y optimización de los procesos de intercambio de datos utilizando .NET Framework, C# y MVC, mejorando significativamente la velocidad de procesamiento y la interoperabilidad del sistema en entornos Azure para operaciones en Panamá y Brasil.</p>
+                            <h4 class="text-lg font-bold text-navy mb-2" data-i18n="proj3_detail_title">Detalles: Migración de Middleware</h4>
+                            <p class="text-gray-600 text-sm mb-4" data-i18n="proj3_detail_desc">Rediseño y optimización de los procesos de intercambio de datos utilizando .NET Framework, C# y MVC, mejorando significativamente la velocidad de procesamiento y la interoperabilidad del sistema en entornos Azure para operaciones en Panamá y Brasil.</p>
                             <div class="grid grid-cols-3 gap-2 mb-4">
                                 <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&q=80" alt="Cloud 1" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
                                 <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&q=80" alt="Cloud 2" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
@@ -416,7 +402,7 @@
                             </div>
                             <a href="https://wa.me/584141561399?text=Hola%20Edwar,%20me%20interesa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proyecto:%20Migraci%C3%B3n%20de%20Middleware%20Cr%C3%ADtico" target="_blank" class="inline-flex items-center justify-center w-full px-4 py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#128C7E] transition font-semibold gap-2">
                                 <i class="fab fa-whatsapp text-xl"></i>
-                                Consultar por WhatsApp
+                                <span data-i18n="btn_whatsapp">Consultar por WhatsApp</span>
                             </a>
                         </div>
                     </div>
@@ -425,23 +411,23 @@
                 <!-- Proyecto 4: Automatización -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover group">
                     <div class="h-48 bg-navyLight flex items-center justify-center relative overflow-hidden">
-                        <i class="fas fa-cogs text-6xl text-white/20 group-hover:scale-110 transition duration-500"></i>
-                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full">AUTOMATIZACIÓN</div>
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="Automation" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full z-10">AUTOMATIZACIÓN</div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-navy mb-2">Optimización de Flujos Operativos</h3>
-                        <p class="text-gray-600 text-sm mb-4">Diseño y despliegue de flujos de automatización complejos Low-Code/No-Code.</p>
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="proj4_title">Optimización de Flujos Operativos</h3>
+                        <p class="text-gray-600 text-sm mb-4" data-i18n="proj4_short">Diseño y despliegue de flujos de automatización complejos Low-Code/No-Code.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">n8n</span>
                             <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Make</span>
                         </div>
                         <button onclick="toggleProjectDetails(this)" class="w-full py-2 border border-apple text-apple rounded-lg hover:bg-apple hover:text-white transition flex items-center justify-center gap-2 font-medium">
                             <i class="fas fa-plus"></i>
-                            <span>Ver detalles +</span>
+                            <span data-i18n="btn_details">Ver detalles +</span>
                         </button>
                         <div class="hidden mt-4 pt-4 border-t border-gray-100 animate-fade-in">
-                            <h4 class="text-lg font-bold text-navy mb-2">Detalles: Optimización de Flujos</h4>
-                            <p class="text-gray-600 text-sm mb-4">Conexión de flujos inteligentes con fuentes de datos, aplicaciones web y plataformas SaaS, creando ecosistemas que aprovechan la automatización para la toma de decisiones y generación de contenido, reduciendo tiempos de ejecución en un 60%.</p>
+                            <h4 class="text-lg font-bold text-navy mb-2" data-i18n="proj4_detail_title">Detalles: Optimización de Flujos</h4>
+                            <p class="text-gray-600 text-sm mb-4" data-i18n="proj4_detail_desc">Conexión de flujos inteligentes con fuentes de datos, aplicaciones web y plataformas SaaS, creando ecosistemas que aprovechan la automatización para la toma de decisiones y generación de contenido, reduciendo tiempos de ejecución en un 60%.</p>
                             <div class="grid grid-cols-3 gap-2 mb-4">
                                 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80" alt="Auto 1" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
                                 <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&q=80" alt="Auto 2" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
@@ -449,7 +435,7 @@
                             </div>
                             <a href="https://wa.me/584141561399?text=Hola%20Edwar,%20me%20interesa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proyecto:%20Optimizaci%C3%B3n%20de%20Flujos%20Operativos" target="_blank" class="inline-flex items-center justify-center w-full px-4 py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#128C7E] transition font-semibold gap-2">
                                 <i class="fab fa-whatsapp text-xl"></i>
-                                Consultar por WhatsApp
+                                <span data-i18n="btn_whatsapp">Consultar por WhatsApp</span>
                             </a>
                         </div>
                     </div>
@@ -458,12 +444,12 @@
                 <!-- Proyecto 5: IA -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover group md:col-span-2 lg:col-span-2">
                     <div class="h-48 bg-navy flex items-center justify-center relative overflow-hidden">
-                        <i class="fas fa-brain text-6xl text-white/20 group-hover:scale-110 transition duration-500"></i>
-                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full">INTELIGENCIA ARTIFICIAL</div>
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80" alt="Artificial Intelligence" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-apple text-white text-xs font-bold px-3 py-1 rounded-full z-10">INTELIGENCIA ARTIFICIAL</div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-navy mb-2">Integración de Agentes Autónomos y LLMs</h3>
-                        <p class="text-gray-600 text-sm mb-4">Implementación de soluciones empresariales con Modelos de Lenguaje Grande y arquitectura RAG.</p>
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="proj5_title">Integración de Agentes Autónomos y LLMs</h3>
+                        <p class="text-gray-600 text-sm mb-4" data-i18n="proj5_short">Implementación de soluciones empresariales con Modelos de Lenguaje Grande y arquitectura RAG.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">LLMs</span>
                             <span class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">RAG</span>
@@ -471,11 +457,11 @@
                         </div>
                         <button onclick="toggleProjectDetails(this)" class="w-full py-2 border border-apple text-apple rounded-lg hover:bg-apple hover:text-white transition flex items-center justify-center gap-2 font-medium">
                             <i class="fas fa-plus"></i>
-                            <span>Ver detalles +</span>
+                            <span data-i18n="btn_details">Ver detalles +</span>
                         </button>
                         <div class="hidden mt-4 pt-4 border-t border-gray-100 animate-fade-in">
-                            <h4 class="text-lg font-bold text-navy mb-2">Detalles: Agentes Autónomos y LLMs</h4>
-                            <p class="text-gray-600 text-sm mb-4">Despliegue de soluciones basadas en Claude, ChatGPT y OpenClaw, integrando lógica de automatización asistida por IA. Transformación de flujos de datos tradicionales en sistemas inteligentes capaces de autogestionarse y apoyar la toma de decisiones complejas.</p>
+                            <h4 class="text-lg font-bold text-navy mb-2" data-i18n="proj5_detail_title">Detalles: Agentes Autónomos y LLMs</h4>
+                            <p class="text-gray-600 text-sm mb-4" data-i18n="proj5_detail_desc">Despliegue de soluciones basadas en Claude, ChatGPT y OpenClaw, integrando lógica de automatización asistida por IA. Transformación de flujos de datos tradicionales en sistemas inteligentes capaces de autogestionarse y apoyar la toma de decisiones complejas.</p>
                             <div class="grid grid-cols-3 gap-2 mb-4">
                                 <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&q=80" alt="IA 1" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
                                 <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&q=80" alt="IA 2" class="rounded-lg w-full h-24 object-cover hover:scale-105 transition">
@@ -483,7 +469,7 @@
                             </div>
                             <a href="https://wa.me/584141561399?text=Hola%20Edwar,%20me%20interesa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proyecto:%20Integraci%C3%B3n%20de%20Agentes%20Aut%C3%B3nomos%20y%20LLMs" target="_blank" class="inline-flex items-center justify-center w-full px-4 py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#128C7E] transition font-semibold gap-2">
                                 <i class="fab fa-whatsapp text-xl"></i>
-                                Consultar por WhatsApp
+                                <span data-i18n="btn_whatsapp">Consultar por WhatsApp</span>
                             </a>
                         </div>
                     </div>
@@ -493,24 +479,24 @@
         </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="py-20 bg-navy text-white">
+    <!-- Contacto con fondo azul marino -->
+    <section id="contacto" class="section-navy py-20 text-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Conectemos</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="contact_title">Conectemos</h2>
             <div class="w-20 h-1 bg-apple mx-auto rounded-full mb-8"></div>
-            <p class="text-gray-300 text-lg mb-12 max-w-2xl mx-auto">
+            <p class="text-gray-300 text-lg mb-12 max-w-2xl mx-auto" data-i18n="contact_subtitle">
                 ¿Buscas soluciones innovadoras, resilientes y orientadas a resultados? Estoy disponible para consultorías, proyectos de transformación digital e integración de IA.
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                 <a href="tel:+584141561399" class="flex flex-col items-center p-6 bg-white/5 rounded-xl hover:bg-white/10 transition border border-white/10 hover:border-apple">
                     <i class="fas fa-phone-alt text-3xl text-apple mb-4"></i>
-                    <span class="text-sm text-gray-400 uppercase tracking-wider">Teléfono</span>
+                    <span class="text-sm text-gray-400 uppercase tracking-wider" data-i18n="contact_phone_label">Teléfono</span>
                     <span class="text-lg font-semibold mt-1">+58 414 1561399</span>
                 </a>
                 <a href="mailto:ejdm2005@gmail.com" class="flex flex-col items-center p-6 bg-white/5 rounded-xl hover:bg-white/10 transition border border-white/10 hover:border-apple">
                     <i class="fas fa-envelope text-3xl text-apple mb-4"></i>
-                    <span class="text-sm text-gray-400 uppercase tracking-wider">Correo Electrónico</span>
+                    <span class="text-sm text-gray-400 uppercase tracking-wider" data-i18n="contact_email_label">Correo Electrónico</span>
                     <span class="text-lg font-semibold mt-1 break-all">ejdm2005@gmail.com</span>
                 </a>
                 <a href="https://www.linkedin.com/in/edwarduque/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center p-6 bg-white/5 rounded-xl hover:bg-white/10 transition border border-white/10 hover:border-apple">
@@ -520,7 +506,6 @@
                 </a>
             </div>
 
-            <!-- Iconos de Redes Sociales -->
             <div class="flex justify-center space-x-6">
                 <a href="#" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-apple hover:text-white transition duration-300" aria-label="X (Twitter)">
                     <i class="fab fa-x-twitter text-xl"></i>
@@ -545,7 +530,6 @@
     <footer class="bg-[#0a1120] text-gray-400 py-8 border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-3">
-                <!-- LOGO SVG EN FOOTER -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="w-10 h-10">
                     <defs>
                         <radialGradient id="globeGradF" cx="50%" cy="40%" r="60%">
@@ -598,17 +582,172 @@
                         <line x1="118" y1="114" x2="145" y2="111" stroke="#93C5FD" stroke-width="0.8"/>
                     </g>
                 </svg>
-                <span class="text-sm">© 2026 EJDM. Todos los derechos reservados.</span>
+                <span class="text-sm">© 2026 EJDM © <span data-i18n="footer_rights">Todos los derechos reservados.</span></span>
             </div>
             <div class="text-sm">
-                Diseñado para la excelencia tecnológica.
+                <span data-i18n="footer_made">Diseñado </span> por la excelencia tecnológica.</span>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script>
-        // Menú móvil
+        // ============ SISTEMA DE IDIOMAS ============
+        const translations = {
+            es: {
+                nav_home: "Inicio",
+                nav_profile: "Perfil",
+                nav_skills: "Especialidades",
+                nav_projects: "Proyectos",
+                nav_contact: "Contacto",
+                hero_badge: "Consultor de Tecnología & Automatización Inteligente",
+                hero_subtitle: "Transformando retos empresariales en soluciones tecnológicas de alto impacto mediante",
+                hero_ai: "Inteligencia Artificial",
+                hero_cloud: "Cloud",
+                hero_arch: "Arquitectura de Software",
+                hero_btn_projects: "Ver Proyectos",
+                hero_btn_connect: "Conectar Ahora",
+                profile_title: "Perfil Profesional",
+                profile_p1: "Ingeniero de Sistemas con más de 24 años de trayectoria transformando retos empresariales en soluciones tecnológicas de alto impacto. Mi enfoque combina una sólida base en ingeniería de software con una visión estratégica de consultoría, especializado en arquitectura web, análisis de datos, soluciones en la nube, Inteligencia Artificial y automatización inteligente.",
+                profile_p2: "A lo largo de mi carrera, he liderado proyectos integrales para diversos sectores, aportando valor mediante la modernización de portales corporativos y el desarrollo de sistemas robustos. Mi metodología se centra en entender el modelo de negocio para implementar la arquitectura tecnológica exacta que impulse el crecimiento y la eficiencia.",
+                profile_p3: "Ya sea liderando migraciones, diseñando arquitecturas basadas en IA o configurando ecosistemas automatizados, mi prioridad es siempre la continuidad operativa y la rentabilidad del cliente.",
+                profile_quote: "\"Siempre interesado en conectar con líderes y equipos que buscan soluciones innovadoras, resilientes y orientadas a resultados.\"",
+                skills_title: "Especialidades y Stack Tecnológico",
+                skill_ai_title: "AI & Automation",
+                skill_ai_desc: "Implementación de flujos inteligentes con n8n, Make, Zapier, Power Automate y despliegue de soluciones basadas en LLMs (Claude, ChatGPT, OpenClaw) y RAG.",
+                skill_dev_title: "Desarrollo Full-Stack y Low Code",
+                skill_dev_desc: "Amplia experiencia en TypeScript, React, Angular, C#, ASP.NET Core y Power Platform (Apps, Pages) para desarrollos ágiles y escalables.",
+                skill_data_title: "Gestión de Datos e IA",
+                skill_data_desc: "Diseño de arquitecturas de datos (MS SQL, PL-SQL, MySQL), Business Intelligence (Power BI, Tableau) e integración de agentes autónomos.",
+                skill_cloud_title: "Ecosistema Cloud & Enterprise",
+                skill_cloud_desc: "Especialista en Azure, Dataverse, SharePoint y gestión de infraestructuras críticas para entornos de alta disponibilidad.",
+                skill_cms_title: "Content Management",
+                skill_cms_desc: "Optimización de plataformas WordPress y SiteCore para entornos de alta exigencia, garantizando rendimiento, seguridad y una experiencia de usuario excepcional.",
+                projects_title: "Proyectos Destacados",
+                projects_subtitle: "Una selección de soluciones implementadas. Haz clic en \"Ver detalles +\" para explorar más.",
+                btn_details: "Ver detalles +",
+                btn_hide: "Ocultar detalles",
+                btn_whatsapp: "Consultar por WhatsApp",
+                proj1_title: "Modernización de Portales Corporativos",
+                proj1_short: "Rediseño y desarrollo de sistemas web robustos para sectores de finanzas y retail.",
+                proj1_detail_title: "Detalles: Modernización de Portales",
+                proj1_detail_desc: "Reingeniería completa de la arquitectura frontend y backend, migrando sistemas legacy a ASP.NET Core y Angular, logrando una mejora del 40% en tiempos de carga y una experiencia de usuario moderna y responsiva.",
+                proj2_title: "Dashboard Ejecutivo de Inteligencia de Negocios",
+                proj2_short: "Diseño de paneles ejecutivos en Power BI con modelos DAX para optimizar la toma de decisiones.",
+                proj2_detail_title: "Detalles: Dashboard Ejecutivo BI",
+                proj2_detail_desc: "Implementación de modelos tabulares complejos y medidas DAX avanzadas para consolidar fuentes de datos dispares, proporcionando visibilidad en tiempo real de KPIs de compras, finanzas y ventas a la alta dirección.",
+                proj3_title: "Migración de Middleware Crítico",
+                proj3_short: "Liderazgo en la migración y actualización de interfaces de middleware para operaciones críticas en la nube.",
+                proj3_detail_title: "Detalles: Migración de Middleware",
+                proj3_detail_desc: "Rediseño y optimización de los procesos de intercambio de datos utilizando .NET Framework, C# y MVC, mejorando significativamente la velocidad de procesamiento y la interoperabilidad del sistema en entornos Azure para operaciones en Panamá y Brasil.",
+                proj4_title: "Optimización de Flujos Operativos",
+                proj4_short: "Diseño y despliegue de flujos de automatización complejos Low-Code/No-Code.",
+                proj4_detail_title: "Detalles: Optimización de Flujos",
+                proj4_detail_desc: "Conexión de flujos inteligentes con fuentes de datos, aplicaciones web y plataformas SaaS, creando ecosistemas que aprovechan la automatización para la toma de decisiones y generación de contenido, reduciendo tiempos de ejecución en un 60%.",
+                proj5_title: "Integración de Agentes Autónomos y LLMs",
+                proj5_short: "Implementación de soluciones empresariales con Modelos de Lenguaje Grande y arquitectura RAG.",
+                proj5_detail_title: "Detalles: Agentes Autónomos y LLMs",
+                proj5_detail_desc: "Despliegue de soluciones basadas en Claude, ChatGPT y OpenClaw, integrando lógica de automatización asistida por IA. Transformación de flujos de datos tradicionales en sistemas inteligentes capaces de autogestionarse y apoyar la toma de decisiones complejas.",
+                contact_title: "Conectemos",
+                contact_subtitle: "¿Buscas soluciones innovadoras, resilientes y orientadas a resultados? Estoy disponible para consultorías, proyectos de transformación digital e integración de IA.",
+                contact_phone_label: "Teléfono",
+                contact_email_label: "Correo Electrónico",
+                footer_rights: "Todos los derechos reservados.",
+                footer_made: "Diseñado con",
+                footer_purpose: "para la excelencia tecnológica."
+            },
+            en: {
+                nav_home: "Home",
+                nav_profile: "Profile",
+                nav_skills: "Specialties",
+                nav_projects: "Projects",
+                nav_contact: "Contact",
+                hero_badge: "Technology & Smart Automation Consultant",
+                hero_subtitle: "Transforming business challenges into high-impact technological solutions through",
+                hero_ai: "Artificial Intelligence",
+                hero_cloud: "Cloud",
+                hero_arch: "Software Architecture",
+                hero_btn_projects: "View Projects",
+                hero_btn_connect: "Connect Now",
+                profile_title: "Professional Profile",
+                profile_p1: "Systems Engineer with over 24 years of experience transforming business challenges into high-impact technological solutions. My approach combines a solid foundation in software engineering with a strategic consulting vision, specialized in web architecture, data analysis, cloud solutions, Artificial Intelligence and smart automation.",
+                profile_p2: "Throughout my career, I have led comprehensive projects for various sectors, adding value through the modernization of corporate portals and the development of robust systems. My methodology focuses on understanding the business model to implement the exact technological architecture that drives growth and efficiency.",
+                profile_p3: "Whether leading migrations, designing AI-based architectures or configuring automated ecosystems, my priority is always operational continuity and client profitability.",
+                profile_quote: "\"Always interested in connecting with leaders and teams seeking innovative, resilient and results-oriented solutions.\"",
+                skills_title: "Specialties & Tech Stack",
+                skill_ai_title: "AI & Automation",
+                skill_ai_desc: "Implementation of intelligent flows with n8n, Make, Zapier, Power Automate and deployment of LLM-based solutions (Claude, ChatGPT, OpenClaw) and RAG.",
+                skill_dev_title: "Full-Stack & Low Code Development",
+                skill_dev_desc: "Extensive experience in TypeScript, React, Angular, C#, ASP.NET Core and Power Platform (Apps, Pages) for agile and scalable development.",
+                skill_data_title: "Data Management & AI",
+                skill_data_desc: "Design of data architectures (MS SQL, PL-SQL, MySQL), Business Intelligence (Power BI, Tableau) and integration of autonomous agents.",
+                skill_cloud_title: "Cloud & Enterprise Ecosystem",
+                skill_cloud_desc: "Specialist in Azure, Dataverse, SharePoint and management of critical infrastructures for high-availability environments.",
+                skill_cms_title: "Content Management",
+                skill_cms_desc: "Optimization of WordPress and SiteCore platforms for high-demand environments, ensuring performance, security and an exceptional user experience.",
+                projects_title: "Featured Projects",
+                projects_subtitle: "A selection of implemented solutions. Click \"View details +\" to explore more.",
+                btn_details: "View details +",
+                btn_hide: "Hide details",
+                btn_whatsapp: "Consult via WhatsApp",
+                proj1_title: "Corporate Portal Modernization",
+                proj1_short: "Redesign and development of robust web systems for finance and retail sectors.",
+                proj1_detail_title: "Details: Portal Modernization",
+                proj1_detail_desc: "Complete reengineering of frontend and backend architecture, migrating legacy systems to ASP.NET Core and Angular, achieving a 40% improvement in load times and a modern, responsive user experience.",
+                proj2_title: "Executive Business Intelligence Dashboard",
+                proj2_short: "Design of executive panels in Power BI with DAX models to optimize decision-making.",
+                proj2_detail_title: "Details: Executive BI Dashboard",
+                proj2_detail_desc: "Implementation of complex tabular models and advanced DAX measures to consolidate disparate data sources, providing real-time visibility of purchasing, finance and sales KPIs to senior management.",
+                proj3_title: "Critical Middleware Migration",
+                proj3_short: "Leadership in the migration and update of middleware interfaces for critical cloud operations.",
+                proj3_detail_title: "Details: Middleware Migration",
+                proj3_detail_desc: "Redesign and optimization of data exchange processes using .NET Framework, C# and MVC, significantly improving processing speed and system interoperability in Azure environments for operations in Panama and Brazil.",
+                proj4_title: "Operational Flow Optimization",
+                proj4_short: "Design and deployment of complex Low-Code/No-Code automation flows.",
+                proj4_detail_title: "Details: Flow Optimization",
+                proj4_detail_desc: "Connection of intelligent flows with data sources, web applications and SaaS platforms, creating ecosystems that leverage automation for decision-making and content generation, reducing execution times by 60%.",
+                proj5_title: "Integration of Autonomous Agents & LLMs",
+                proj5_short: "Implementation of enterprise solutions with Large Language Models and RAG architecture.",
+                proj5_detail_title: "Details: Autonomous Agents & LLMs",
+                proj5_detail_desc: "Deployment of solutions based on Claude, ChatGPT and OpenClaw, integrating AI-assisted automation logic. Transformation of traditional data flows into intelligent systems capable of self-management and supporting complex decision-making.",
+                contact_title: "Let's Connect",
+                contact_subtitle: "Looking for innovative, resilient and results-oriented solutions? I am available for consulting, digital transformation projects and AI integration.",
+                contact_phone_label: "Phone",
+                contact_email_label: "Email",
+                footer_rights: "All rights reserved.",
+                footer_made: "Designed with",
+                footer_purpose: "for technological excellence."
+            }
+        };
+
+        let currentLang = localStorage.getItem('ejdm_lang') || 'es';
+
+        function changeLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('ejdm_lang', lang);
+            document.documentElement.lang = lang;
+            
+            // Actualizar todos los elementos con data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+            
+            // Actualizar estado de botones
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(`btn-${lang}`).classList.add('active');
+            document.getElementById(`btn-${lang}-m`).classList.add('active');
+        }
+
+        // Inicializar idioma al cargar
+        document.addEventListener('DOMContentLoaded', () => {
+            changeLanguage(currentLang);
+        });
+
+        // ============ MENÚ MÓVIL ============
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
         btn.addEventListener('click', () => {
@@ -620,7 +759,7 @@
             });
         });
 
-        // Función para expandir detalles de proyectos
+        // ============ DETALLES DE PROYECTOS ============
         function toggleProjectDetails(button) {
             const detailsDiv = button.nextElementSibling;
             const icon = button.querySelector('i');
@@ -630,14 +769,14 @@
                 detailsDiv.classList.remove('hidden');
                 icon.classList.remove('fa-plus');
                 icon.classList.add('fa-minus');
-                textSpan.textContent = 'Ocultar detalles';
+                textSpan.textContent = translations[currentLang].btn_hide;
                 button.classList.add('bg-apple', 'text-white');
                 button.classList.remove('text-apple');
             } else {
                 detailsDiv.classList.add('hidden');
                 icon.classList.remove('fa-minus');
                 icon.classList.add('fa-plus');
-                textSpan.textContent = 'Ver detalles +';
+                textSpan.textContent = translations[currentLang].btn_details;
                 button.classList.remove('bg-apple', 'text-white');
                 button.classList.add('text-apple');
             }
